@@ -36,12 +36,12 @@ If you use it in console mode, you will have the option to switch to the gui mod
 #### Preview of console mode
 Right after startup, all possible options will be printed to the console. There is no further explanation/manual though.
 
-![screenshot of console mode after startup](https://github.com/lpapailiou/tictactoe/blob/master/src/com/chess/resources/img/tictactoe_screenshot_startup_console.png)
+![screenshot of console mode after startup](https://github.com/lpapailiou/tictactoe/blob/master/src/com/tictactoe/resources/img/tictactoe_screenshot_startup_console.png)
 
 #### Preview of gui mode
 The gui mode has one scene only. There are short explanations provided by tooltip texts.
 
-![screenshot of console mode after startup](https://github.com/lpapailiou/tictactoe/blob/master/src/com/chess/resources/img/tictactoe_screenshot_startup_gui.png)
+![screenshot of console mode after startup](https://github.com/lpapailiou/tictactoe/blob/master/src/com/tictactoe/resources/img/tictactoe_screenshot_startup_gui.png)
 
 ### The application
 
