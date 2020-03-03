@@ -21,7 +21,7 @@ public class TicTacToe extends Application {
 	public void start(Stage stage) {
 		this.stage = stage;
 		Qnet.getData(); 
-		//Setting.setCmd(false);
+		//Setting.setCmd(false); 
 		if (!Setting.cmd()) {
 			startupGui();
 		} else {

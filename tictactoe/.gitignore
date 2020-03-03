@@ -1,1 +1,14 @@
+/bin/
 /target/
+.gitignore
+
+# eclipse files
+.project
+.classpath
+*fxbuild
+
+# intellij files
+*.iml
+/.idea/
+/.settings/
+/test/
