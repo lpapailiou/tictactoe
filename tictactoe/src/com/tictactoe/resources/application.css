@@ -1,0 +1,127 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+* {
+	/*070200 #1b0600 */
+	
+	-fx-dark-text-color: #0c1915;
+    -fx-mid-text-color: #19332a;
+    -fx-light-text-color: #0c1915;
+    -fx-base: e2fff5; /* fff4f0-fx-alignment: lightest */
+    -fx-hover-base: #ecfff8; /*#ecfff8 ;  ffe6dc slightly darker MAiN COLOR*/
+    -fx-pressed-base: #72e5be; /* fff4f0 ffd7c9 bit darker */
+    -fx-dark-accent: #bbe5d7; /* ff8453 */
+    
+    -fx-focus-color: transparent; /*#a6ccbf; #defff3; ff7a97 ff748c */
+    -fx-inner-border: #bbe5d7; /* #ecfff8;*/ 
+    -fx-faint-focus-color: #a6ccbf;
+    
+	/*-fx-color: fff4f0;*/
+	
+    -fx-selection-bar: #defff3;
+    -fx-cell-focus-inner-border: #a6ccbf; /* ffaa90-fx-alignment: almost red */
+    -fx-accent: #bbe5d7;
+    
+    
+
+}
+
+.tooltip {
+	-fx-font-size: 1.3em; 
+}
+
+.root {
+	/*-fx-font-family: "Courier New";*/
+	-fx-background-color: transparent; 
+}
+
+.button,
+.slider .thumb,
+.radio-button > .radio,
+.combo-box,
+.combo-box-base,
+.check-box > .box,
+.gui-control-default {
+	-fx-background-radius: 20;
+	-fx-cursor: hand;
+	/*                            shadow   |     outer frame (not focused) | inner frame | background */
+	-fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, #ecfff8;
+	/*-fx-background-color: lightsalmon;*/
+}
+
+.combo-box,
+.combo-box-base {
+	-fx-background-color: #ecfff8, -fx-focus-color, -fx-inner-border, #ecfff8;
+}
+
+
+
+.combo-box,
+.slider .thumb:hover,
+.radio-button > .radio:hover,
+.check-box > .box:hover,
+.gui-control-default:hover {
+	/*-fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-dark-accent;*/
+}
+
+.combo-box,
+.slider .thumb:pressed,
+.radio-button > .radio:pressed,
+.check-box > .box:pressed,
+.gui-control-default:pressed {
+	-fx-background-radius: 20;
+	-fx-cursor: hand;
+	/*                            shadow   |     outer frame (not focused) | inner frame | background */
+	-fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-hover-base;
+	/*-fx-background-color: lightsalmon;*/
+	/*-fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-pressed-base;*/
+}
+
+.combo-box,
+.slider .thumb:armed,
+.radio-button > .radio:armed,
+.check-box > .box:armed,
+.gui-control-default:armed {
+	-fx-background-radius: 20;
+	-fx-cursor: hand;
+	/*                            shadow   |     outer frame (not focused) | inner frame | background */
+	-fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-hover-base;
+	/*-fx-background-color: lightsalmon;*/
+	/*-fx-background-color: -fx-faint-focus-color, -fx-focus-color, -fx-inner-border, -fx-pressed-base;*/
+}
+
+.menu-bar > .container > .menu-button:hover,
+.menu-bar > .container > .menu-button:focused,
+.menu-bar > .container > .menu-button:showing {
+	/*-fx-background-color: bisque; */
+    -fx-background-color: -fx-accent;
+    -fx-font-size: 9pt;
+}
+
+.menu-bar > .container > .menu-button {
+    -fx-background-radius: 10;
+}
+
+.menu-item:hover,
+.menu-item:focused,
+.menu-item:showing {
+     -fx-background-color: -fx-accent;
+}
+
+.combo-box-popup > .list-view,
+.context-menu {
+	-fx-padding: 4;
+    -fx-background-insets: 2, 1, 2;
+    -fx-background-radius: 0 0 8 8, 0 0 7 7, 0 0 6 6;
+    -fx-border-color: white transparent transparent transparent;
+}
+
+.button-default {
+	-fx-background-radius: 0;
+	-fx-font-weight: bold;
+	-fx-font-size: 20;
+	-fx-effect: dropshadow( one-pass-box , #a6ccbf , 8 , 0.0 , 2 , 0 );
+	-fx-effect: innershadow( gaussian , rgba(0,0,0,0.3) , 20,0,0,0 );
+	-fx-padding: 0;
+	-fx-cursor: hand;
+
+}

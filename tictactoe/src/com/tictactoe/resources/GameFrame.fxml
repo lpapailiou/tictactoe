@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.tictactoe.application.GameController">
+   <children>
+      <GridPane fx:id="boardGrid" alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" minWidth="133.3" prefWidth="133.3" />
+          <ColumnConstraints hgrow="NEVER" minWidth="133.3" prefWidth="133.3" />
+          <ColumnConstraints hgrow="NEVER" minWidth="133.3" prefWidth="133.3" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="133.3" prefHeight="133.3" vgrow="NEVER" />
+          <RowConstraints minHeight="133.3" prefHeight="133.3" vgrow="NEVER" />
+          <RowConstraints minHeight="133.3" prefHeight="133.3" vgrow="NEVER" />
+        </rowConstraints>
+      </GridPane>
+      <GridPane fx:id="settingsGrid" alignment="CENTER_LEFT" minWidth="400.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="NEVER" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" />
+          <ColumnConstraints hgrow="NEVER" maxWidth="200.0" minWidth="200.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="0.0" prefHeight="0.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="33.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="33.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="33.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="33.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="33.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="33.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="33.0" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" prefHeight="33.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="63.0" minHeight="10.0" prefHeight="63.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="27.0" vgrow="NEVER" />
+          <RowConstraints maxHeight="25.0" minHeight="0.0" prefHeight="0.0" vgrow="NEVER" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="sourceLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="100.0" text="source" GridPane.rowIndex="1" />
+            <Label fx:id="whoStartsLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="100.0" text="who starts?" GridPane.rowIndex="2" />
+            <Label fx:id="player1Label" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="100.0" text="player one" GridPane.rowIndex="3" />
+            <Label fx:id="player2Label" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="100.0" text="player two" GridPane.rowIndex="4" />
+            <Label fx:id="speedLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="100.0" text="speed" GridPane.rowIndex="5" />
+            <Label fx:id="learnLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="100.0" text="learn?" GridPane.rowIndex="6" />
+            <Label fx:id="roundsLabel" alignment="CENTER_RIGHT" prefHeight="17.0" prefWidth="100.0" text="rounds" GridPane.rowIndex="7" />
+            <Button fx:id="startBut" mnemonicParsing="false" prefHeight="25.0" prefWidth="208.0" text="start" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="statisticsLabel" alignment="TOP_RIGHT" prefHeight="61.0" prefWidth="100.0" text="statistics" GridPane.rowIndex="9">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Label>
+            <Button fx:id="clearBut" mnemonicParsing="false" prefHeight="25.0" prefWidth="301.0" text="clear statistics" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <ComboBox fx:id="source" prefHeight="25.0" prefWidth="229.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="player1" prefHeight="25.0" prefWidth="208.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <ComboBox fx:id="player2" prefHeight="25.0" prefWidth="223.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Slider fx:id="speed" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <RadioButton mnemonicParsing="false" prefHeight="32.0" prefWidth="43.0" text="X" fx:id="xStarts" />
+                  <RadioButton fx:id="oStarts" mnemonicParsing="false" prefHeight="35.0" prefWidth="45.0" text="O" />
+               </children></HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <RadioButton fx:id="learn" mnemonicParsing="false" prefHeight="40.0" prefWidth="21.0" text="" />
+                  <Region prefHeight="30.0" prefWidth="33.0" />
+                  <Label fx:id="alphaLabel" alignment="CENTER" prefHeight="25.0" prefWidth="15.0" text="α" />
+                  <TextField fx:id="alpha" maxWidth="50.0" minWidth="50.0" prefHeight="25.0" prefWidth="50.0" />
+                  <Label fx:id="gammaLabel" alignment="CENTER" prefHeight="25.0" prefWidth="33.0" text="γ" />
+                  <TextField fx:id="gamma" maxWidth="50.0" minWidth="50.0" prefHeight="25.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <children>
+                  <TextField fx:id="rounds" prefHeight="25.0" prefWidth="100.0" />
+                  <Region prefHeight="30.0" prefWidth="25.0" />
+                  <Label fx:id="epsilonLabel" alignment="CENTER" prefHeight="25.0" prefWidth="29.0" text="ε" />
+                  <TextField fx:id="epsilon" maxWidth="50.0" minWidth="50.0" prefHeight="25.0" prefWidth="50.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="63.0" prefWidth="127.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <children>
+                  <Label fx:id="statistics" alignment="TOP_LEFT" prefHeight="88.0" prefWidth="100.0" />
+                  <Label fx:id="percent" alignment="TOP_LEFT" prefHeight="63.0" prefWidth="100.0" />
+               </children>
+            </HBox>
+         </children>
+      </GridPane>
+   </children>
+</HBox>
