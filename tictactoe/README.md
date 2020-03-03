@@ -94,8 +94,8 @@ Here an example:
     -------------  
   
 This board will be represented as ``[1, 1, 0, -1, 0, 0, 0, 0, -1]`` within the system.
-The player one matrix is: [0, 0, 1, 0, 0.442485772, 0.623211147, 0.288224478, 0.84532113, 0]
-The player two matrix is: [0, 0, 0.999801705, 0, 0.500448683, 0.527828707, 0.038373504, 0.569956665, 0]  
+The player one matrix is: ``[0, 0, 1, 0, 0.442485772, 0.623211147, 0.288224478, 0.84532113, 0]``
+The player two matrix is: ``[0, 0, 0.999801705, 0, 0.500448683, 0.527828707, 0.038373504, 0.569956665, 0]``  
    
 As you see, as it is now player one's turn (X), he will most likely pick the field on the upper right corner as the result is the most promising.
 
@@ -175,7 +175,6 @@ To fix it, do following steps:
 6. Run the game again
 
 ### From a Jar file
-You can download the Jar file directly from the [artifacts folder](https://github.com/lpapailiou/tictactoe/tree/master/classes/artifacts/tictactoe_jar). Alternatively, you can build it yourself.
 
 #### Build Jar in Intellij IDE 
 1. Go to ``File > Project Structure...``
