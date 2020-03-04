@@ -175,6 +175,7 @@ To fix it, do following steps:
 6. Run the game again
 
 ### From a Jar file
+You can download the Jar file directly from the [artifacts folder](https://github.com/lpapailiou/tictactoe/tree/master/classes/artifacts/tictactoe_jar). Alternatively, you can build it yourself.
 
 #### Build Jar in Intellij IDE 
 1. Go to ``File > Project Structure...``

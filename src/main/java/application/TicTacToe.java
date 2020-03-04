@@ -41,7 +41,7 @@ public class TicTacToe extends Application {
 			stage.setMinWidth(816);
 			stage.setMinHeight(440);
 			stage.getIcons().add(new Image("main/resources/img/icon.png"));
-			stage.setTitle("Tic Tac Toe | machine learning project v1.0");
+			stage.setTitle("Tic Tac Toe | machine learning project");
 			stage.show();  
 		} catch (Exception e) {
 			e.printStackTrace();
