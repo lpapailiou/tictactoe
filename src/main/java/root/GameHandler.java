@@ -150,7 +150,7 @@ public class GameHandler {
 		s += "learn: {" + Setting.getLearn() + "} \t\t[learn], use <boolean> option\n";
 		s += "alpha: {" + Setting.getAlpha() + "} \t\t[alpha], use <double> option between 0 and 1 for learning curve\n";
 		s += "gamma: {" + Setting.getGamma() + "} \t\t[gamma], use <double> option between 0 and 1 for reward discount\n";
-		s += "epsilon: {" + Setting.getGamma() + "} \t\t[epsilon], use <double> option between 0 and 1 for epsilon greedy randomization\n";
+		s += "epsilon: {" + Setting.getEpsilon() + "} \t\t[epsilon], use <double> option between 0 and 1 for epsilon greedy randomization\n";
 		s += "rounds: {" + Setting.getRounds() + "} \t\t[round], use <int> option for round count\n\n";
 		s += "[go] to start game\n";
 		return s;
