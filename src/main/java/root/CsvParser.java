@@ -1,4 +1,4 @@
-package com.tictactoe.root;
+package main.java.root;
 
 import java.awt.Desktop;
 import java.io.BufferedReader;
@@ -14,7 +14,8 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
-import com.tictactoe.model.DataNode;
+
+import main.java.model.DataNode;
 
 public class CsvParser {
 	
@@ -32,9 +33,9 @@ public class CsvParser {
 		BufferedReader csvReader = null;
 		String row;
 		try {
-			InputStream in = CsvParser.class.getClassLoader().getResourceAsStream("com/tictactoe/resources/data/qTable_library.csv");
+			InputStream in = CsvParser.class.getClassLoader().getResourceAsStream("main/resources/data/qTable_library.csv");
 			if (in == null) {
-				in = CsvParser.class.getClassLoader().getResourceAsStream("com/ch/tictactoe/resources/data/qTable_library.csv");
+				in = CsvParser.class.getClassLoader().getResourceAsStream("src/main/resources/data/qTable_library.csv");
 			}
 			InputStreamReader isr = new InputStreamReader(in);
 			csvReader = new BufferedReader(isr);

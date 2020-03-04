@@ -1,10 +1,10 @@
-package com.tictactoe.model;
+package main.java.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.tictactoe.application.GridButton;
-import com.tictactoe.root.Qnet;
+import main.java.application.GridButton;
+import main.java.root.Qnet;
 
 public class Setting {
 	

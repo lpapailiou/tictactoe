@@ -1,6 +1,6 @@
-package com.tictactoe.root;
+package main.java.root;
 
-import com.tictactoe.root.rounds.Round;
+import main.java.root.rounds.Round;
 
 public class Bot extends Thread implements Runnable {
 	

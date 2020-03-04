@@ -36,12 +36,12 @@ If you use it in console mode, you will have the option to switch to the gui mod
 #### Preview of console mode
 Right after startup, all possible options will be printed to the console. There is no further explanation/manual though.
 
-![screenshot of console mode after startup](https://github.com/lpapailiou/tictactoe/blob/master/src/com/tictactoe/resources/img/tictactoe_screenshot_startup_console.png)
+![screenshot of console mode after startup](https://github.com/lpapailiou/tictactoe/blob/master/src/main/resources/img/tictactoe_screenshot_startup_console.png)
 
 #### Preview of gui mode
 The gui mode has one scene only. There are short explanations provided by tooltip texts.
 
-![screenshot of console mode after startup](https://github.com/lpapailiou/tictactoe/blob/master/src/com/tictactoe/resources/img/tictactoe_screenshot_startup_gui.png)
+![screenshot of console mode after startup](https://github.com/lpapailiou/tictactoe/blob/master/src/main/resources/img/tictactoe_screenshot_startup_gui.png)
 
 ### The application
 
@@ -68,7 +68,7 @@ As this application focuses on machine learning, there are several parameters to
 As mentioned before, I used __qlearning__ for this project.  
   
 It works as following:  
-In the background, the game board is represented as flattened out array. It contains '1' for a player one symbol, '-1' for a player two symbol and '0' for a free field. During a game, every board state is recorded in a history. After a game ends, the whole history is feeded to the ``Qnet`` instance for evaluation. With the board, we also feed the result of the game (which is '1' for a player one win, '-1' for a player two win and '0' for a draw).  
+In the background, the game board is represented as flattened out array. It contains '1' for a player one symbol, '-1' for a player two symbol and '0' for a free field. During a game, every board state is recorded in a history. After a game ends, the whole history is fed to the ``Qnet`` instance for evaluation. With the board, we also feed the result of the game (which is '1' for a player one win, '-1' for a player two win and '0' for a draw).  
   
 The ``Qnet`` will then evaluate backwards (i.e. start with the last board state and go backwards step by step). The result will be backpropagated then with the Bellman equation.  
 In the code, it as realized as following. The reward is the value which is backpropagated.
@@ -93,8 +93,8 @@ Here an example:
     |   |   | o |  
     -------------  
   
-This board will be represented as ``[1, 1, 0, -1, 0, 0, 0, 0, -1]`` within the system.
-The player one matrix is: ``[0, 0, 1, 0, 0.442485772, 0.623211147, 0.288224478, 0.84532113, 0]``
+This board will be represented as ``[1, 1, 0, -1, 0, 0, 0, 0, -1]`` within the system.  
+The player one matrix is: ``[0, 0, 1, 0, 0.442485772, 0.623211147, 0.288224478, 0.84532113, 0]``  
 The player two matrix is: ``[0, 0, 0.999801705, 0, 0.500448683, 0.527828707, 0.038373504, 0.569956665, 0]``  
    
 As you see, as it is now player one's turn (X), he will most likely pick the field on the upper right corner as the result is the most promising.

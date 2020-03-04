@@ -1,14 +1,14 @@
-package com.tictactoe.root.rounds;
+package main.java.root.rounds;
 
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
 
-import com.tictactoe.application.GridButton;
-import com.tictactoe.model.Mode;
-import com.tictactoe.model.Setting;
-import com.tictactoe.root.Game;
-import com.tictactoe.root.Qnet;
+import main.java.application.GridButton;
+import main.java.model.Mode;
+import main.java.model.Setting;
+import main.java.root.Game;
+import main.java.root.Qnet;
 
 public abstract class Round {
 	

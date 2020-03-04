@@ -1,14 +1,9 @@
-package com.tictactoe.application;
+package main.java.application;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import com.tictactoe.model.Mode;
-import com.tictactoe.model.Setting;
-import com.tictactoe.model.Source;
-import com.tictactoe.root.GameHandler;
-import com.tictactoe.root.Qnet;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -23,6 +18,11 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.Tooltip;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
+import main.java.model.Mode;
+import main.java.model.Setting;
+import main.java.model.Source;
+import main.java.root.GameHandler;
+import main.java.root.Qnet;
 
 public class GameController extends GameHandler implements Initializable {
 	

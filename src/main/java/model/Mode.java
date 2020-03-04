@@ -1,4 +1,4 @@
-package com.tictactoe.model;
+package main.java.model;
 
 public enum Mode {
 	

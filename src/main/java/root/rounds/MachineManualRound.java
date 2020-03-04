@@ -1,56 +1,53 @@
-package com.tictactoe.root.rounds;
+package main.java.root.rounds;
 
-import com.tictactoe.root.Game;
+import main.java.root.Bot;
+import main.java.root.Game;
 
-public class MachineManualCmdRound extends Round {
+public class MachineManualRound extends Round {
 	
+	private Bot bot;	
 	protected boolean moveLock = true;
 
-	public MachineManualCmdRound(Game game) {
+	public MachineManualRound(Game game) {
 		super(game);
+		
+		prepareGui();
 		board = new int[9];	
-		playRound();
-	}
-
-	private void playRound() {
+		bot = new Bot(this, lock);
+		bot.start();
+		bot.block(false);
+		
 		if (!p1.isManual()) {
-			botStep();
+			bot.requestResume();
 		} else {
 			moveLock = false;
-			step();
-		}
-		
-		while (moveCounter <9 && !gameEnded) {
-			step();
 		}
 	}
 	
-	private void step() {
+	@Override
+	public void step(int st) {
 		if (!gameEnded && !moveLock) {
-			int m = 0;
-			
-			try {
-				m = Integer.parseInt(prompt()) - 1;
-			} catch (Exception e) {
-			}
+			int m = st;
 			
 			boolean success = move(m);
 			if (success) {
 				if (verboseConsole) {
+					System.out.println("you played: " + (m+1));
 					System.out.println(printBoard(xStarts));
 				}
 				if (checkWinner() || moveCounter == 9) {
 					end();
 				} else {
+					bot.requestResume();
 					moveLock = true;
-					botStep();
+					setCursor(true);
 				}
 			}
 		}
 	}
-	
 	@Override
-	public void botStep() {	
+	public void botStep() {
+		
 		if (!gameEnded) {
 			shortDelay();
 			int m = getPolicy();
@@ -64,9 +61,18 @@ public class MachineManualCmdRound extends Round {
 				if (checkWinner() || moveCounter == 9) {
 					end();
 				}
+				bot.requestPause();
+				moveLock = false;
+				setCursor(false);
 			}
-			moveLock = false;
+			
 		}
+	}
+	
+	@Override
+	protected void end() {
+		super.end();
+		bot.requestStop();
 	}
 
 }

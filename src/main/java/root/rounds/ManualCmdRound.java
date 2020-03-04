@@ -1,6 +1,6 @@
-package com.tictactoe.root.rounds;
+package main.java.root.rounds;
 
-import com.tictactoe.root.Game;
+import main.java.root.Game;
 
 public class ManualCmdRound extends Round {
 

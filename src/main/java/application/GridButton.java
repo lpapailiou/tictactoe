@@ -1,12 +1,12 @@
-package com.tictactoe.application;
+package main.java.application;
 
-import com.tictactoe.root.rounds.Round;
 import javafx.application.Platform;
 import javafx.scene.Cursor;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import main.java.root.rounds.Round;
 
 public class GridButton extends Button {
 	
@@ -29,7 +29,7 @@ public class GridButton extends Button {
 	
 	
 	public ImageView createSymbol(String n) {
-		String path = "com/tictactoe/resources/img/";
+		String path = "main/resources/img/";
 		path += n;
 		final String filePath = path;
 		ImageView img = new ImageView(filePath);

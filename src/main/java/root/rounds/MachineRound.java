@@ -1,9 +1,9 @@
-package com.tictactoe.root.rounds;
+package main.java.root.rounds;
 
-import com.tictactoe.application.GridButton;
-import com.tictactoe.model.Setting;
-import com.tictactoe.root.Bot;
-import com.tictactoe.root.Game;
+import main.java.application.GridButton;
+import main.java.model.Setting;
+import main.java.root.Bot;
+import main.java.root.Game;
 
 public class MachineRound extends Round {
 	

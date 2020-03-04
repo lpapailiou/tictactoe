@@ -1,11 +1,11 @@
-package com.tictactoe.root;
+package main.java.root;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-import com.tictactoe.model.DataNode;
+import main.java.model.DataNode;
 
 public class Qnet {
 	

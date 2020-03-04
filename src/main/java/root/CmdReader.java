@@ -1,9 +1,9 @@
-package com.tictactoe.root;
+package main.java.root;
 
 import java.util.Scanner;
 
-import com.tictactoe.model.Mode;
-import com.tictactoe.model.Source;
+import main.java.model.Mode;
+import main.java.model.Source;
 
 public class CmdReader {
 	

@@ -1,13 +1,13 @@
-package com.tictactoe.root;
+package main.java.root;
 
 import java.util.Scanner;
 
-import com.tictactoe.model.Setting;
-import com.tictactoe.root.rounds.MachineManualCmdRound;
-import com.tictactoe.root.rounds.MachineManualRound;
-import com.tictactoe.root.rounds.MachineRound;
-import com.tictactoe.root.rounds.ManualCmdRound;
-import com.tictactoe.root.rounds.ManualRound;
+import main.java.model.Setting;
+import main.java.root.rounds.MachineManualCmdRound;
+import main.java.root.rounds.MachineManualRound;
+import main.java.root.rounds.MachineRound;
+import main.java.root.rounds.ManualCmdRound;
+import main.java.root.rounds.ManualRound;
 
 public class Game {
 	
