@@ -66,9 +66,9 @@
                <children>
                   <RadioButton fx:id="learn" mnemonicParsing="false" prefHeight="40.0" prefWidth="21.0" text="" />
                   <Region prefHeight="30.0" prefWidth="33.0" />
-                  <Label fx:id="alphaLabel" alignment="CENTER" prefHeight="25.0" prefWidth="15.0" text="α" />
+                  <Label fx:id="alphaLabel" alignment="CENTER" prefHeight="25.0" minWidth="33.0" prefWidth="33.0" text="α" />
                   <TextField fx:id="alpha" maxWidth="50.0" minWidth="50.0" prefHeight="25.0" prefWidth="50.0" />
-                  <Label fx:id="gammaLabel" alignment="CENTER" prefHeight="25.0" prefWidth="33.0" text="γ" />
+                  <Label fx:id="gammaLabel" alignment="CENTER" prefHeight="25.0" minWidth="33.0" prefWidth="33.0" text="γ" />
                   <TextField fx:id="gamma" maxWidth="50.0" minWidth="50.0" prefHeight="25.0" prefWidth="50.0" />
                </children>
             </HBox>
@@ -76,7 +76,7 @@
                <children>
                   <TextField fx:id="rounds" prefHeight="25.0" prefWidth="100.0" />
                   <Region prefHeight="30.0" prefWidth="25.0" />
-                  <Label fx:id="epsilonLabel" alignment="CENTER" prefHeight="25.0" prefWidth="29.0" text="ε" />
+                  <Label fx:id="epsilonLabel" alignment="CENTER" prefHeight="25.0" minWidth="33.0" prefWidth="33.0" text="ε" />
                   <TextField fx:id="epsilon" maxWidth="50.0" minWidth="50.0" prefHeight="25.0" prefWidth="50.0" />
                </children>
             </HBox>
