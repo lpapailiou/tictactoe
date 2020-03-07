@@ -9,11 +9,12 @@ Tic tac toe was chosen, because it is quite simple, thus easy to test.
 1. [About the game](#about-the-game)  
 	1.1 [Before you start the game](#before-you-start-the-game)  
 	1.2 [The application](#the-application)  
-		1.2.1. [The rules](#the-rules)  
-		1.2.1. [The parameters](#the-parameters)  
-		1.2.1. [How the AI works](#how-the-ai-works)  
-		1.2.1. [How to obtain a perfect game](#how-to-obtain-a-perfect-game)  
-		1.2.4. [Thoughts about this project](#thoughts-about-this-project)  
+		1.2.1 [The rules](#the-rules)  
+		1.2.2 [How to play](#how-to-play)  
+		1.2.3 [The parameters](#the-parameters)  
+		1.2.4 [How the AI works](#how-the-ai-works)  
+		1.2.5 [How to obtain a perfect game](#how-to-obtain-a-perfect-game)  
+		1.2.6 [Thoughts about this project](#thoughts-about-this-project)  
 2. [Project structure](#project-structure)  
 3. [How to get it](#how-to-get-it)  
 	3.1 [How to import it to Intellij IDE](#how-to-import-it-to-intellij-ide)   
@@ -47,6 +48,9 @@ The gui mode has one scene only. There are short explanations provided by toolti
 
 #### The rules
 There are two players playing on a 3x3 grid. After each move, the players switch. One player plays with a __x__ symbol, the other one has the __o__ symbol. The player who succeeds first to get three symbols in a row (or column or diagonal) wins. 
+
+#### How to play
+If no manual player is involved, starting the game is sufficient. If you play manually, use clicks on the grid fields to set your symbol (gui mode) or enter a number between 1 and 9 when prompted (console mode). The number 1 will correspond with the grid field on top left, then the grid field will in crease by one from left to right, top to bottom.
 
 #### The parameters
 As this application focuses on machine learning, there are several parameters to control. Following, a quick explanation:  
